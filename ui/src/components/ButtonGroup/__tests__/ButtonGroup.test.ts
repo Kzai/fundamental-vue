@@ -24,7 +24,6 @@ describe("ButtonGroup", () => {
     });
     const wrapper = mount(Wrapper, { localVue });
     await localVue.nextTick();
-    const group = wrapper.find(FdButtonGroup);
     const buttons = wrapper.findAll(FdButtonGroupButton);
     for (const buttonWrapper of buttons.wrappers) {
       const button = buttonWrapper.find("button");
